@@ -438,12 +438,21 @@ box-shadow: -8px 8px 8px 8px #111; width: 200px;
 color: #FFF;
 background: #222;
 }
-#act {display:block; position: absolute; color: #fff; background: #404040; margin: 5px;}
-#act input {color:#000;}
-#box {display: inline-block; position:relative; color: #fff; background: #000; margin: 5px;vertical-align:top;}
+#endturn {position:fixed; top:10px; left: 10px; color: #000; background: #ddd; padding: 5px; 
+-moz-box-shadow: -1px 1px 1px 1px #999
+-webkit-box-shadow: -1px 1px 1px 1px #999;
+box-shadow: -1px 1px 1px 1px #999; }
+#endturn:hover  {background: #fff;}
+#info {display: inline-block; position:relative; color: #fff; background: #000; margin: 5px;vertical-align:top;}
+#OLDactionMenu {display:block;}
+#OLDact {display:inline-block; position: relative; color: #fff; background: #404040; padding: 5px; text-align:right; vertical-align:top;}
+.action {display:inline-block; position: relative; color: #fff; background: #404040; padding: 5px; text-align:right; vertical-align:top;}
+#act input {color:#000; width:4em; text-align:right;}
+#box {display: inline-block; position:fixed; top:10px; left: 500px; color: #fff; background: #222; margin: 5px;vertical-align:top;}
 
-button {width: 60px;
+#OLDact {display:block; position: absolute; color: #fff; background: #404040; margin: 5px; text-align:right;}
+button {
 	color: #222; 
-	
 }
+#welcome button {width: 60px;}
 	

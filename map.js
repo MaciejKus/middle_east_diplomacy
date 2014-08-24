@@ -371,27 +371,30 @@ rsr.setViewBox(500, 300, 140, 130 );
 
 //countries the game involves:
 var states = [PK, AF, IR, OM, AE, YE, SA, KW, IQ, SY, TR, JO, LB, IL, PS, EG, LY, QA];
-$.extend(PK, {likeAmerica:14, pop:182, mil:5362,ethnicHomo: 44, sunni: 80, shia: 15, gdp: 3144, trade: 0, hasMil: 0, milAid: 297, aid:285, stability: 103.8, democracy: 4.46, govFriend: 65, trade:0, sab: 0, helpRev:0});
-$.extend(AF, {likeAmerica:20, aid:1876, pop:30.5, milAid:6012, mil:229, govFriend:75, trade:0, hasMil:1, stability:105.4, sab:0, helpRev:0});
-$.extend(IR, {likeAmerica:12, aid:3, pop:77, milAid:0, mil:7639, govFriend:15, trade:-1, hasMil: 0, stability:85.7, sab:1, helpRev:0});
-$.extend(OM, {likeAmerica:53, aid:1, pop:3.6, milAid:14, mil:4617, govFriend:62, trade:1, hasMil:0, stability:47.4, sab:0, helpRev:0});
-$.extend(AE, {likeAmerica:52, aid:0, pop:9.3, milAid:0, mil:11572, govFriend:65, trade:0, hasMil:0, stability:51.2, sab:0, helpRev:0});
-$.extend(YE, {likeAmerica:42, aid:26, pop:24.4, milAid:8, mil:1196, govFriend:65, trade:0, hasMil:0, stability:95.4, sab:0, helpRev:0});
-$.extend(SA, {likeAmerica:27, aid:0, pop:28.8, milAid:0, mil:38223, govFriend:55, trade:0, hasMil:0, stability:76.9, sab:0, helpRev:0});
-$.extend(KW, {likeAmerica:56, aid:0, pop:3.4, milAid:0, mil:4000, govFriend:65, trade:0, hasMil:1, stability:62, sab:0, helpRev:0});
-$.extend(IQ, {likeAmerica:29, aid:3428, pop:33.4, milAid:4369, mil:2873, govFriend:65, trade:0, hasMil:1, stability:110.6, sab:0, helpRev:0});
-$.extend(SY, {likeAmerica:48, aid:20, pop:22.8, milAid:0, mil:1732, govFriend:30, trade:0, hasMil:0, stability:90.1, sab:0, helpRev:0});
-$.extend(TR, {likeAmerica:21, aid:10, pop:74.9, milAid:15, mil:16884, govFriend:70, trade:0, hasMil:1, stability:75.4, sab:0, helpRev:0});
-$.extend(JO, {likeAmerica:26, aid:281, pop:6.5, milAid:208, mil:1337, govFriend:62, trade:1, hasMil:0, stability:77.3, sab:0, helpRev:0});
-$.extend(LB, {likeAmerica:59, aid:234, pop:4.5, milAid:4, mil:1169, govFriend:50, trade:0, hasMil:0, stability:95.7, sab:0, helpRev:0});
-$.extend(IL, {likeAmerica:71, aid:44, pop:8, milAid:2389, mil:14348, govFriend:80, trade:1, hasMil: 0,stability:83, sab:0, helpRev:0});
-$.extend(PS, {likeAmerica:16, aid:361, pop:4.1, milAid:0, mil:200, govFriend:20, trade:0, hasMil:0, stability:93, sab:0, helpRev:0});
-$.extend(EG, {likeAmerica:31, aid:465, pop:82, milAid:1291, mil:3716, govFriend:70, trade:0, hasMil:1, stability:88.7, sab:0, helpRev:0});
-$.extend(LY, {likeAmerica:53, aid:14, pop:6.2, milAid:0, mil:1100, govFriend:38, trade:0, hasMil:0, stability:70, sab:0, helpRev:0});
-$.extend(QA, {likeAmerica:49, aid:1, pop:2.1, milAid:0, mil:2318, govFriend:65, trade:0, hasMil:0, stability:52.7, sab:0, helpRev:0});
+$.extend(PK, {likeAmerica:14, pop:182, mil:5362,ethnicHomo:44, sunni:77, shia:17, gdp: 171, hasMil: 0, milAid: 297, aid:285, stability: 103.8, democracy: 4.46, govFriend: 65, trade:0, sab: 0, helpRev:0, leader:'shia'});
+$.extend(AF, {likeAmerica:20, aid:1876, pop:30.5, milAid:6012, mil:229, govFriend:75, trade:0, hasMil:1, stability:105.4, sab:0, helpRev:0, shia:19, sunni:80, democracy:3, leader:'sunni', gdp:10});
+$.extend(IR, {likeAmerica:12, aid:3, pop:77, milAid:0, mil:7639, govFriend:15, trade:-1, hasMil: 0, stability:85.7, sab:0, helpRev:0, shia:90, sunni:9, democracy:2.8, leader:'shia', gdp:351});
+$.extend(OM, {likeAmerica:53, aid:1, pop:3.6, milAid:14, mil:4617, govFriend:62, trade:1, hasMil:0, stability:47.4, sab:0, helpRev:0, shia:2, sunni:21, democracy:3, leader:'ibadi', gdp:61});
+$.extend(AE, {likeAmerica:52, aid:0, pop:9.3, milAid:0, mil:11572, govFriend:65, trade:0, hasMil:0, stability:51.2, sab:0, helpRev:0, shia:16, sunni:80, democracy:2.6, leader:'sunni', gdp:315});
+$.extend(YE, {likeAmerica:42, aid:26, pop:24.4, milAid:8, mil:1196, govFriend:65, trade:0, hasMil:0, stability:95.4, sab:0, helpRev:0, shia:36, sunni:63, democracy:3, leader:'sunni', gdp:27 });
+$.extend(SA, {likeAmerica:27, aid:0, pop:28.8, milAid:0, mil:38223, govFriend:55, trade:0, hasMil:0, stability:76.9, sab:0, helpRev:0, shia:5, sunni:95, democracy:1.9, leader:'sunni',gdp:520});
+$.extend(KW, {likeAmerica:56, aid:0, pop:3.4, milAid:0, mil:4000, govFriend:65, trade:0, hasMil:1, stability:62, sab:0, helpRev:0, shia:25, sunni:60, democracy:3.4, leader:'sunni', gdp:147});
+$.extend(IQ, {likeAmerica:29, aid:3428, pop:33.4, milAid:4369, mil:2873, govFriend:65, trade:0, hasMil:1, stability:110.6, sab:0, helpRev:0, shia:63, sunni:34, democracy:4, leader:'shia', gdp:132});
+$.extend(SY, {likeAmerica:48, aid:20, pop:22.8, milAid:0, mil:1732, govFriend:30, trade:0, hasMil:0, stability:90.1, sab:0, helpRev:0, shia:13, sunni:74, democracy:2.2, leader:'shia', gdp:53});
+$.extend(TR, {likeAmerica:21, aid:10, pop:74.9, milAid:15, mil:16884, govFriend:70, trade:0, hasMil:1, stability:75.4, sab:0, helpRev:0, shia:15, sunni:85, democracy:5.7, leader:'sunni', gdp:731});
+$.extend(JO, {likeAmerica:26, aid:281, pop:6.5, milAid:208, mil:1337, govFriend:62, trade:1, hasMil:0, stability:77.3, sab:0, helpRev:0, shia:1, sunni:92, democracy:3.9, leader:'sunni', gdp:22});
+$.extend(LB, {likeAmerica:59, aid:234, pop:4.5, milAid:4, mil:1169, govFriend:50, trade:0, hasMil:0, stability:95.7, sab:0, helpRev:0, shia:36, sunni:22, democracy:5.6, leader:'Christian', gdp:29});
+$.extend(IL, {likeAmerica:71, aid:44, pop:8, milAid:2389, mil:14348, govFriend:80, trade:1, hasMil: 0,stability:83, sab:0, helpRev:0, shia:0, sunni:10, democracy:7.5, leader:'Jewish', gdp:213});
+$.extend(PS, {likeAmerica:16, aid:361, pop:4.1, milAid:0, mil:200, govFriend:20, trade:0, hasMil:0, stability:93, sab:0, helpRev:0, shia:0, sunni:95, democracy:5.8, leader:'sunni', gdp:10});
+$.extend(EG, {likeAmerica:31, aid:465, pop:82, milAid:1291, mil:3716, govFriend:70, trade:0, hasMil:1, stability:88.7, sab:0, helpRev:0, shia:0, sunni:90,democracy:3.9 , leader:'sunni', gdp:162});
+$.extend(LY, {likeAmerica:53, aid:14, pop:6.2, milAid:0, mil:1100, govFriend:38, trade:0, hasMil:0, stability:70, sab:0, helpRev:0, shia:0, sunni:97, democracy:2, leader:'sunni', gdp:87});
+$.extend(QA, {likeAmerica:49, aid:1, pop:2.1, milAid:0, mil:2318, govFriend:65, trade:0, hasMil:0, stability:52.7, sab:0, helpRev:0, shia:14, sunni:86, democracy:2.9, leader:'sunni', gdp:115});
 //if mil of country is above x and occupation is true, then it is war/invasion. if the mil is less than x then it is occupation? or maybe depends on how friendly gov of country is to US. if unfriendly and occupation, then war, if mil gets bellow x then gov changed and becomes friendly
 
+//CAN USE A DUMMY VARIBaLE SUCH AS wasRebelion, which is 0 at begining of every turn, but if a rebellion happend that turn it gets ++, and changes public opinion at home? same for terror and other stuff?
 
+var shiaFriendliness = 0;
+var sunniFriendliness = 0; //sees how overall sunni governments see US.  + if hostile, - if friendly. this takes GDP into consideration. this then affects how sunni people / govs feel towards US.
 var $info = $('#info');//turns left, etc.
 var $box = $('#box');
 var $act = $('#act');// mil aid, etc
@@ -400,64 +403,207 @@ var $actionMenu = $('#actionMenu'); //action bar
 var $thirdActionMenu = $('#thirdActionMenu');
 var $welcome = $('#welcome'); //welcome but also used for actions
 var clicked; //clicked state
+var firstTerm =1; //dummy so only one election allowed.
 var domesticApproval = 67;
 var months = 48; //until next election
-var turnMonths = 3; //number of moneths per turn
+var turnMonths = 2; //number of moneths per turn
 var totalSpending = 0; //total foreign spending in millions/
-//pick democrat or repiblican at begging. this will influence initial backing for certain groups. buisness more friendly to rep, etc.
-//let player chose how long each turn will be. 1 month - 3 months?
-var USmil = 685000; //US military spending. this goes down if wars happen, etc. might not be able to invade all countries if this gets too low
+var nextTurn = '';
+var $details = $('#detailed');
 
-//IF TROOPS and likeAMerica  is very hostile, then domestic support goes down? probably not do this. instead just look for terrorism or long wars.
 //end turn:
 $('#endturn').click( function() {
+	nextTurn = ''; //reset turn message
+	$details.hide();
 	totalSpending = 0;
 	for (var i=0,j=states.length;i<j;i++) {
 		var state = states[i];
 		//us military has over 1000 troops in country then:
 		if (state.hasMil) {
 			if(state.govFriend < 15) {
-				//WAR
+				//war
+				nextTurn += 'At war with ' + state.attr('title') + '<br>';
 				state.milAid = 0; //cannot give milaid to state where we are at war
-				state.stability += 8; //less stable
-				if (state.mil > 1000) {state.mil -=1000*turnMonths; USmil -=1000*turnMonths;} 
-				else { state.govFriend = 80;}; //war turns to occupation friendly gov installed
+				state.stability += 5; //less stable
+				if (state.mil > 1000) state.mil -=1000*turnMonths; 
+				else { state.govFriend = 80; 
+					nextTurn += 'Friendly government installed in ' +state.attr('title') + '<br>';
+				}; //war turns to occupation friendly gov installed
 			} else if (state.govFriend <40) {
 				state.hasMil = 0;
-				//ADD MESSAGE SAYING troops have been expelled
+				nextTurn += state.attr('title') + ' has expelled Us troops<br>';
 			}
 			state.likeAmerica -= 1;
-			state.stability -= 1; //CHANGE ? //less is more stable. this is a slowly stablizing force on country as a whole. the presense of troops will have short term effects also (such as increasing chance of terror, but lessening iran/saudi influence?
-		}	
-		//decrease of 10% or more decreases gov liking
+			state.stability -= 1; //less is more stable. this is a slowly stablizing force on country as a whole. the presense of troops will have short term effects also (such as increasing chance of terror, but lessening iran/saudi influence?
+		}
+		//decrease of 10% or more in milAid decreases gov liking
 		//depends of percent decreased and also
 		//actual amount decreased. the magic number is just
 		//there to make it a nicer amount
-		if (state.oldMilAid > state.milAid * 1.1) state.govFriend -= state.oldMilAid*0.01*(state.oldMilAid - state.milAid)/state.oldMilAid;
+		if (state.oldMilAid > state.milAid * 1.1) state.govFriend -= state.oldMilAid*0.01*(state.oldMilAid - state.milAid)/state.oldMilAid; //milAid change changes foreign govs view of US
 		if (state.oldMilAid * 1.1 < state.milAid ) state.govFriend += state.milAid*0.01*(state.milAid - state.oldMilAid)/state.milAid;
 		state.oldAid = state.aid;
 		state.oldMilAid = state.milAid; //enact actual changes to aid numbers
 		state.aidPP = Math.round(10*state.aid/state.pop)/10; //rounded to one decimal point
-		state.likeAmerica = Math.round(10*(state.likeAmerica + 0.05*state.aidPP))/10;
+		state.gdp += (0.03 * state.gdp) + state.aidPP/100; //aid increases economy. economy rises 3% no matter what
+		state.mil += (0.02 * state.mil) + state.milAid/(state.pop*10); //mil goes up 2%, plus milAid * 10%
+		state.likeAmerica = Math.round(10*(state.likeAmerica + 0.05*state.aidPP))/10; //peoples reaction to aid per person
 		state.likeAmerica = Math.round(10*(state.likeAmerica + 0.0005*state.milAid))/10;
+		state.stability -= (state.mil)/(state.pop*800) +state.milAid/(1500) + state.aidPP/50 + state.gdp/(state.pop*100);   //military over population + aidPP + GDP means more stability
+		if (state.democracy < 5) state.stability += 1/state.democracy; //MAYBE ADD MULTIPLE?
+		//if gov is very hostile, then the leader typeminfluences other governments/people of that same type. eg. if iran is very hostile, then other shia's are also most hostile....
+		if (state.govFriend < 25) {
+			for (var y =0; y<j; y++) {
+				if (states[y].leader === state.leader) {
+					states[y].govFriend -= state.gdp/300; //a large country has influence on neighbors
+				}
+			}
+		}
+		if (state.govFriend > 75) {
+			for (var x =0; x<j; x++) {
+				if (states[x].leader === state.leader) {
+					states[x].govFriend += state.gdp/300; //a large country has influence on neighbors
+				}
+			}
+		}
+
+		//checks for head of state v sunni and shia
+		if (state.leader != 'shia') state.stability += state.shia/100;
+		if (state.leader != 'sunni') state.stability += state.sunni/100;
+		if (state.helpRev) state.stability += 1;
+
+		if (state.trade  > 0 && state.govFriend < 45)  {
+			state.trade = 0; //if gov not friendly then trade goes away
+			nextTurn += state.attr('title') + ' has ended your free trade agreement<br>';
+		}
+
+		//IF helpRev then see if random chance influenced my mil strength the CIA is caught. if so, relations go down with that countries gov. add this to perturn messages
+
+		if (state.trade === -1) {
+			domesticApproval -= 1 * state.gdp/100; //sanctions lose domestic point, bigger countries matter more
+			state.govFriend -= 5;
+			state.likeAmerica -= 5;
+			state.mil -= 300;
+			state.stability += 3; //less stable
+			state.gdp -= state.gdp *0.02;
+		}
+		if (state.trade === 1) {
+			state.gdp += state.gdp * 0.02;
+			domesticApproval += 1 * state.gdp/100; //free trade adds approval
+			state.likeAmerica += 1;
+			//higher chance of democratic protests
+			state.stability += 3/state.democracy;
+			//ADD CHANCE OF TERRORISM - most US targets when free trade is around?
+			//terror in part depends on county's mil strength + mil aid. if terror, peope will want you to spend more on milaid for that country to lower chance of more terro
+		}
+		if (state.govFriend > 60) domesticApproval += 0.2;
+		if (state.govFriend < 20) domesticApproval -= 0.2 + (2 * state.hasMil); //voters kinda care about other governents. care if there is a war
+
+		state.stability += state.supReb; //support for rebels alters stability
+		state.govFriend -= 2*state.supReb; //govfriend increases if suppresion of rebeles, decreases if support of rebels
+	
+		///////covert action
+		if (state.sab) {
+			state.mil -= 100;
+			state.gdp -= state.gdp * 0.05;
+			//CHANCE OF GETTING CAUGHT.
+		}
+		
+		//if people's view to US is diff than gov's, then stability goes down
+		// difference between the two adds between 0-2 points to stability
+		state.stability += Math.abs(state.likeAmerica - state.govFriend)/50; 
+
+		if (state.hasRebelion) {
+			state.gdp -= state.gdp * 0.05;
+			state.mil -= state.mil * 0.01; //mil goes down a percent
+			//rebellion suppressed:
+			if (state.stability <85) {
+				state.supReb = 0; 
+				state.hasRebelion = 0; 
+				state.rebType = null;
+				nextTurn+= 'The rebellion in ' + state.attr('title') + ' has been put down<br>';
+			} // stability means end of rebeltion
+			//rebellion wins:
+			if (state.stability *Math.random() > 100) { //chance of government overthrow
+				state.govFriend = 80 * Math.random(); //0-79.9 rebellions leadership can be random
+				if (state.rebType === 'Shia') state.leader='shia';
+				else if (state.rebType === 'Sunni') state.leader='sunni';
+				else {
+					if (state.sunni > 50) state.leader = 'sunni';
+					else if (state.shia > 50) state.leader = 'shia';
+					else state.leader = 'secular';
+					state.govFriend = state.likeAmerica; //if democratic or nationalist rebeltion then new government is the same as people's view of US
+				}
+				if (state.supReb>0) state.govFriend += 20;
+				if (state.supReb < 0) state.govFriend -= 20;
+				state.hasRebelion = 0;
+				state.supReb = 0;
+				state.rebType = null;
+				state.stability = 80;		
+				nextTurn += 'The government of ' + state.attr('title') + ' has been overthrown<br>';
+			}
+			state.stability += 1;
+		}	
+			
+
+		if (state.stability>120) state.stability = 120; //cannot go over 120
+		if (state.stability<0) state.stability = 0;
+
+		//see if the state has a rebellion of some kind:	
+		//previous calculations should have set stability to correct leve
+		//and then multiply by randomness.
+		if (state.hasRebelion || state.stability*Math.random() > 85) {
+			state.hasRebelion = 1;
+			//create optons for rebellion type then chose one at random:
+			if (!state.rebType ) {
+				var choice = ['nationalist'];
+				if(state.shia > 12 && state.leader != 'shia') choice.push('Shia');
+				if(state.sunni > 12 && state.leader != 'sunni') choice.push('Sunni');
+				if(state.democracy < 5)  choice.push('democratic');
+				state.rebType = choice[Math.floor(Math.random()*choice.length)];
+			}
+			nextTurn += state.attr('title') + ' has a ' + state.rebType + ' rebellion<br>';
+		}
+		
+		if (state.govFriend > 100)  state.govFriend = 100;
+		if (state.govFriend <0) state.govFriend = 0;
 		if (state.likeAmerica < 0) state.likeAmerica = 0;
 		if (state.likeAmerica > 100) state.likeAmerica = 100;
 		if (state.mil < 0) state.mil =0;
-		totalSpending= Math.round(totalSpending +state.aid+state.milAid); //no rounding due to use of parseInt on user input
+		totalSpending= Math.round(totalSpending +state.aid+state.milAid);
 	}
+	if (totalSpending > 12000) domesticApproval -= 0.0005 * (totalSpending - 12000); //for every 2000 over 12000 loose one point
+	domesticApproval = Math.round(domesticApproval);
+	if (domesticApproval > 100) domesticApproval = 100;
+	if (domesticApproval < 0) domesticApproval = 0;
 	resetCountries(); //reset to uclicked state
 	months -= turnMonths; //decides how many months a turn is
+	if (months < 0 && firstTerm) election();
 	setInfo(); //update meta info 
 	$actionMenu.hide();
 });
 
-function setInfo() {
-	$info.html(months + ' months until the next election<br>Domestic approval is at ' + domesticApproval + '%<br>Foreign spending is at ' + totalSpending + ' million USD');
+function election() { //DO STUFF HERE
+	if (domesticApproval > 50 && firstTerm) {
+		months = 48;
+		nextTurn += 'You were reelected! Good job!<br>';
+	} else if (domesticApproval <50 && firstTerm) {
+		//DO STUFF
+	} else {
+		nextTurn += 'Your term has ended<br>';
+	} //MAYBE MAKE THIS THE WELCOME SCREEN? OR SCREEN YOU CANNOT TURN OFF? end game.
+	firstTerm = 0;
 }
 
+
+function setInfo() {
+	$info.html(months + ' months until the next election<br>Domestic approval is at ' + domesticApproval + '%<br>Foreign spending is at ' + totalSpending + ' million USD<br>' + nextTurn);
+}
+
+//shown when hovering over country:
 var showBox = function() {
 	!this.clicked && this.attr('fill','#755959');
-	var peeplike, govlike, p = this.likeAmerica, g = this.govFriend;
+	var peeplike, govlike,stab,  p = this.likeAmerica, g = this.govFriend, s = this.stability;
 	if (p < 20 ) {
 		peeplike = 'very hostile';
 	} else if (p<40) {
@@ -476,8 +622,19 @@ var showBox = function() {
 	} else {
 		govlike = 'very friendly';
 	}
-		
-	$box.html(this.attr('title') + '<br>Total aid: ' + (this.milAid+ this.aid) + '<br>The people are ' + peeplike+ '<br>The government is ' + govlike);
+	if (s> 95) {
+		stab = 'very unstable';
+	} else if (s>75) {
+		stab = 'unstable';
+	}else if (s >50) {
+		stab = 'stable';
+	} else { stab = 'very stable'; }
+			
+	$box.html(this.attr('title') + '<br>Total aid: ' + (this.milAid+ this.aid) + '<br>The people are ' + p+ '<br>The government is ' + g+ '<br>Stabiliy: ' + s);
+	//IF REBELTION, FREE TRADE, OTHER NOTES, append THEM
+	$box.append('<br>Democracy Score: ' + this.democracy);
+	$box.append('<br>GDP: ' + this.gdp);
+	if(this.hasRebelion) $box.append('<br>Has a ' + this.rebType + ' rebellion'); //ADD REBELION TYPE
 	$box.show();
 };
 
@@ -496,17 +653,24 @@ var clickCountry = function() {
 	$moreAct.html('Actions:<br><button id="dip">Diplomatic</button><br><button id="cov">Covert</button><br><button id ="mil">Military</button>');
 	$actionMenu.show();
 	this.attr('fill','#FF5959');
-	//didnt want to use closures due to possible memory leaks
-	//instead loop through all countries.
-	//could instead do something like:
-	//var x = this;
-	//$('#na').keyup(function() {x.newAid = this.val();});
-	//but referencing the x creates closure...
 	$('#na').keyup(changeAid);
 	$('#ma').keyup(changeAid);
 	$('#dip').click(dipMenu);
 	$('#cov').click(covMenu);
 	$('#mil').click(milMenu);
+	showDetails();
+}
+
+function showDetails() {
+	//stability is 85-stability score. this shows a higher number being more stable, and a negative number being possible for rebelion
+	$details.html('<strong>' + clicked.attr('title') +'</strong><br>Population: ' + clicked.pop + '<br>% Sunni: ' +clicked.sunni + '<br>% Shia: ' + clicked.shia +'<br>Leader is ' + clicked.leader +  '<br>GDP: ' + Math.round(clicked.gdp) + '<br>Friendliness to US: ' +Math.round(clicked.likeAmerica) + '<br>Friendliness of government: ' + Math.round(clicked.govFriend) + '<br>Stability: ' + Math.round(85-clicked.stability) + '<br>Democracy Index: ' + clicked.democracy + '<br>Military strength: ' + Math.round(clicked.mil) + '<br>Aid is: ' + clicked.aid + '<br>Military aid is: ' + clicked.milAid);
+	if (clicked.trade === 1 ) $details.append('<br>Has Free Trade');
+	else if (clicked.trade === -1) $details.append('<br>Sanctions Enforced');
+	if (clicked.helpRev)  $details.append('<br>Destabilization Campaign');
+	if (clicked.sab) $details.append('<br>Sabotage Campaign');
+	if (clicked.hasRebeltion) $details.append('<br>' + clicked.rebType + ' rebellion');
+	if (clicked.hasMil) $details.append('<br>US military present');
+	$details.show();
 }
 
 function dipMenu() {
@@ -520,17 +684,27 @@ function dipMenu() {
 	} else if (clicked.trade === 1) {
 		$thirdActionMenu.append('<button id="closetrade">End Free Trade Agreement</button><br>');
 	}
+	//democracy will increase, gofFriend will decrease if push for democratic change
+	$thirdActionMenu.append('<button id="pushdem">Push for Democratic Reforms</button><br>');
 	$('#opentrade').hover(openTrade, wh);	
 	$('#closetrade').hover(openTrade,wh);	
 	$('#negtrade').hover(startSanctions,wh);	
 	$('#trade').hover(startSanctions,wh);	
+	$('#pushdem').hover(pushDem,wh);	
 	$('#opentrade').click(function() {  clicked.trade=1; $thirdActionMenu.hide();});	
 	$('#closetrade').click(function() {  clicked.trade=0;$thirdActionMenu.hide();});	
 	$('#negtrade').click(function() {  clicked.trade=-1;$thirdActionMenu.hide();});	
 	$('#trade').click(function() {  clicked.trade=0;$thirdActionMenu.hide();});	
+	//how much does demanding democracy affect things. if country if frienldy it will listen and have a negative govFriend reaction, if unfriendly it will simple have a (lesser) govFreind reactoin. a push to democracy will lead to a tiny bit more stability right away
+	$('#pushdem').click(function() {  if (clicked.govFriend > 60) {clicked.democracy+=0.5;clicked.govFriend-=2.5; clicked.stability-=1;} clicked.govFriend -=1;$thirdActionMenu.hide();});	
 	$thirdActionMenu.show();
-	
 }
+
+function pushDem() {
+	$welcome.html("Putting diplomatic pressure on another country will result in that county's government viewing the USA less favorably. No one wants to have outsiders telling the how to run their own country. However, if the government is friendly with the USA, the diplomatic effort will result in an increase in democracy in that country. If that government is unfriendly it may simply lead to more agitation between the two states.");
+	$welcome.show();
+}
+	
 
 function startSanctions() {
 	$welcome.html('Trade sanctions are a tool to put pressure on a government. They weaken support for that government, but also weaken support for America in that country. Sanction are a broad tool and affect most of society. Imposing sanctions decreases the strength of a countries economy, military and government. It also hurts American businesses which used to do business with that country.');
@@ -550,29 +724,43 @@ function covMenu() {
 		$thirdActionMenu.html('<button id="stopsab">Stop Sabotage Campaign</button><br>');
 	}
 	if (clicked.helpRev === 0) {
-		$thirdActionMenu.append('<button id="startrev">Support Regime Change</button><br>');
+		$thirdActionMenu.append('<button id="startrev">Start Destabilization Campaign</button><br>');
 	} else {
-		$thirdActionMenu.append('<button id="stoprev">End Support for Regime Change</button><br>');
+		$thirdActionMenu.append('<button id="stoprev">End Destabilization Campaign</button><br>');
 	}			
+	//can support oropose rebellion
+	if (clicked.hasRebelion && clicked.supReb != 1)  $thirdActionMenu.append('<button id="supreb">Support Rebels</button><br>');
+	if (clicked.hasRebelion && clicked.supReb != 0)  $thirdActionMenu.append('<button id="noreb">End Actions for/against Rebels</button><br>');
+	if (clicked.hasRebelion && clicked.supReb != -1)  $thirdActionMenu.append('<button id="antireb">Help Supress Rebels</button><br>');
 	$('#startsab').hover(startSab, wh);
 	$('#stopsab').hover(startSab, wh);
 	$('#startrev').hover(startRev, wh);
 	$('#stoprev').hover(startRev, wh);
+	$('#supreb').hover(supReb, wh);
+	$('#noreb').hover(supReb, wh);
+	$('#antireb').hover(supReb, wh);
 	$('#startsab').click(function() {  clicked.sab = 1;$thirdActionMenu.hide();});
 	$('#stopsab').click(function() {  clicked.sab = 0;$thirdActionMenu.hide();});
 	$('#startrev').click(function() {  clicked.helpRev = 1;$thirdActionMenu.hide();});
 	$('#stoprev').click(function() { clicked.helpRev = 0;$thirdActionMenu.hide();});
+	$('#supreb').click(function() { clicked.supReb =1; $thirdActionMenu.hide();});//changes to stability
+	$('#noreb').click(function() { clicked.supReb =0; $thirdActionMenu.hide();});
+	$('#antireb').click(function() { clicked.supReb =-1; $thirdActionMenu.hide();});
 	$thirdActionMenu.show();
-	//if rebelion = false help start rebelion. otherwise have input text where $ can fund rebelion. how much to give. if helping rebelion, there is a chance of this becoming public and hurting reltions with some but helping others?
 }
 
 function startSab() {
-	$welcome.html('A sabotage campaign can be carried out by the CIA to hurt a countries economy, stability and government. Be aware that if your operatives get caught or exposed this can lead to negative reactions from foreign governments and might result in a public relationship crisis abroad and at home.');
+	$welcome.html("A sabotage campaign can be carried out by the CIA to hurt a country's economic and military strength. Be aware that if your operatives get caught or exposed this can lead to negative reactions from foreign governments and might result in a public relationship crisis abroad and at home.");
 	$welcome.show();
 }
 	
 function startRev() {
-	$welcome.html("A covert campaign to further regime change will strengthen rebellious and unsatisfied segments of society. This may lead to a coup, pro-democracy protests or ethnic, nationalist or religious insurrections. A new government may drastically alter this country's relationship with the United States.");
+	$welcome.html("A covert campaign to destabilize a country. This may strengthen rebellious and unsatisfied segments of society. This may lead to a coup, pro-democracy protests or ethnic, nationalist or religious insurrections. The political structure of the country will be weaker.");
+	$welcome.show();
+}
+
+function supReb() {
+	$welcome.html("A new government may drastically alter this country's relationship with the United States and neighboring states. The presence of a rebellion weakens the country's GDP, stability and current government. If a rebellion is not stopped, it may lead to civil war. Supporting or suppressing a rebel movment will affect how the current government sees you.");
 	$welcome.show();
 }
 
@@ -623,6 +811,7 @@ function changeAid() {
 for (var i=0,j=states.length;i<j;i++) {
 	var state = states[i];
 	state.clicked = false; //add variable to see if country has been clicked
+	state.supReb = 0; //sets support for rebels to 0 
 	state.hover(showBox,hideBox); 
 	state.click(clickCountry);
 	state.oldAid = state.aid; //sets oldAid for first round
@@ -645,49 +834,44 @@ function resetCountries() {
 	}
 }
 
-//iran stabalizes or destabailzes shia controlled countries
-function iranInfluence() {
-	for (var i=0,j=states.length; i<j; i++) {
-		if (states[i].shia >10 && IR.mil>4000 && states[i] != 'IR') {
-			if (states[i].leader === 'shia') { //change
-				states[i].stability += 2; //CHECK THIS
-			} else {
-				//destabalize?
-			}
-		}
-	}
-}
 
 //invasion of country or occupation.
-//likeAmerica does down
-//friendly goverment installed
-//economy suffers
 //allies of country have more negative option of US
-//trade goes up once invasion turns into occupation
 function invade() {
-console.log('invading');
 	clicked.hasMil = 1;
 	clicked.govFriend = 0; //goverment hates USA if invaded. duh
 	clicked.milAid =0;
-//DO THE FOLLOWING EACH TURN. check to see if gov is hostile, if so 
-//	if (clicked.mil > 1000) {
-		//war
-//		clicked.mil -= 1000 *turnMonths;
-//		USmil -= 1000 * turnMonths;
-//	} else {
-//		//occupation
-//		clicked.govFriend
-//	}
+	//all states with similar majority religion take negative view of US
+	if(clicked.shia > 50) {
+		for (var i=0,j=states.length; i<j; i++) {
+			states[i].likeAmerica -= 0.2 * states[i].shia;
+		}
+	}
+	if(clicked.sunni > 50) {
+		for (var i=0,j=states.length; i<j; i++) {
+			states[i].likeAmerica -= 0.2 * states[i].sunni;
+		}
+	}
+	//if clicked.state = shia, then gov opinion also goes down. shia slightly more grave due to less shia leaders
+	if (clicked.leader === 'shia') {
+		for (var i=0,j=states.length; i<j; i++) {
+			if(states[i].leader === 'shia') states[i].govFriend -= 3 ;
+		}
+	}
+	if (clicked.leader === 'sunni') {
+		for (var i=0,j=states.length; i<j; i++) {
+			if(states[i].leader === 'sunni') states[i].govFriend -= 2 ;
+		}
+	}
+		
+		
 }
 	
 function wh() {
 	$welcome.hide();
 } //makes things a tiny bit shorter to write this out only once
 
-
 }
-
-
 
 function hideIntro() {
 	$('#welcome').hide();

@@ -432,9 +432,9 @@ th {
 	top: 100px;
 	left: 100px;
 	z-index:2;
--moz-box-shadow: -8px 8px 8px 8px #111; width: 200px;
--webkit-box-shadow: -8px 8px 8px 8px #111; width: 200px;
-box-shadow: -8px 8px 8px 8px #111; width: 200px;
+-moz-box-shadow: -8px 8px 8px 8px #111; width: 250px;
+-webkit-box-shadow: -8px 8px 8px 8px #111; width: 250px;
+box-shadow: -8px 8px 8px 8px #111; width: 250px;
 color: #FFF;
 background: #222;
 }
@@ -443,14 +443,13 @@ background: #222;
 -webkit-box-shadow: -1px 1px 1px 1px #999;
 box-shadow: -1px 1px 1px 1px #999; }
 #endturn:hover  {background: #fff;}
-#info {display: inline-block; position:relative; color: #fff; background: #000; margin: 5px;vertical-align:top;}
-#OLDactionMenu {display:block;}
-#OLDact {display:inline-block; position: relative; color: #fff; background: #404040; padding: 5px; text-align:right; vertical-align:top;}
-.action {display:inline-block; position: relative; color: #fff; background: #404040; padding: 5px; text-align:right; vertical-align:top;}
-#act input {color:#000; width:4em; text-align:right;}
+#actionMenu {display:inline;}
+#map {float:left; margin:0 5px 0 0;}
+.action {display:inline-block; color: #fff; background: #404040;padding:5px;  margin:2px; text-align:right;}
+.action input {width: 70px; color:#000;}
+#info {display:inline-block; position: relative; color: #fff; background: #000; text-align:right; }
 #box {display: inline-block; position:fixed; top:10px; left: 500px; color: #fff; background: #222; margin: 5px;vertical-align:top;}
 
-#OLDact {display:block; position: absolute; color: #fff; background: #404040; margin: 5px; text-align:right;}
 button {
 	color: #222; 
 }

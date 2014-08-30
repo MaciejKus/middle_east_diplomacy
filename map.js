@@ -390,8 +390,6 @@ group_a.push(
 	$.extend(LY, {likeAmerica:53, aid:14, pop:6.2, milAid:0, mil:1100, govFriend:38, trade:0, hasMil:0, stability:70, sab:0, helpRev:0, shia:0, sunni:97, democracy:2, leader:'sunni', gdp:87});
 	$.extend(QA, {likeAmerica:49, aid:1, pop:2.1, milAid:0, mil:2318, govFriend:65, trade:0, hasMil:0, stability:52.7, sab:0, helpRev:0, shia:14, sunni:86, democracy:2.9, leader:'sunni', gdp:115});
 
-	var shiaFriendliness = 0;
-	var sunniFriendliness = 0; //sees how overall sunni governments see US.  + if hostile, - if friendly. this takes GDP into consideration. this then affects how sunni people / govs feel towards US.
 	var $info = $('#info');//turns left, etc.
 	var $box = $('#box');
 	var $act = $('#act');// mil aid, etc
@@ -431,7 +429,7 @@ group_a.push(
 					if (state.mil > 1000) state.mil -=1000*turnMonths; 
 					else { state.govFriend = 80; 
 						nextTurn += 'Friendly government installed in ' +state.attr('title') + '<br>';
-					}; //war turns to occupation friendly gov installed
+					} //war turns to occupation friendly gov installed
 				} else if (state.govFriend <40) {
 					state.hasMil = 0;
 					nextTurn += state.attr('title') + ' has expelled US troops<br>';
@@ -683,7 +681,7 @@ group_a.push(
 	var hideBox = function() {
 		$box.hide();
 		!this.clicked && this.attr('fill','#595959');
-	}
+	};
 
 	var clickCountry = function() {
 		resetCountries(); //reset to uclicked state
@@ -699,7 +697,7 @@ group_a.push(
 		$('#cov').click(covMenu);
 		$('#mil').click(milMenu);
 		showDetails();
-	}
+	};
 
 	//detailed info for each country, in numbers. shown when clicked on county
 	function showDetails() {
@@ -776,9 +774,9 @@ group_a.push(
 			$thirdActionMenu.append('<button id="stoprev">End Destabilization Campaign</button><br>');
 		}			
 		//support or opopose rebellion
-		if (clicked.hasRebelion && clicked.supReb != 1)  $thirdActionMenu.append('<button id="supreb">Support Rebels</button><br>');
-		if (clicked.hasRebelion && clicked.supReb != 0)  $thirdActionMenu.append('<button id="noreb">End Actions for/against Rebels</button><br>');
-		if (clicked.hasRebelion && clicked.supReb != -1)  $thirdActionMenu.append('<button id="antireb">Help Supress Rebels</button><br>');
+		if (clicked.hasRebelion && clicked.supReb !== 1)  $thirdActionMenu.append('<button id="supreb">Support Rebels</button><br>');
+		if (clicked.hasRebelion && clicked.supReb !== 0)  $thirdActionMenu.append('<button id="noreb">End Actions for/against Rebels</button><br>');
+		if (clicked.hasRebelion && clicked.supReb !== -1)  $thirdActionMenu.append('<button id="antireb">Help Supress Rebels</button><br>');
 		$('#startsab').hover(startSab, wh);
 		$('#stopsab').hover(startSab, wh);
 		$('#startrev').hover(startRev, wh);

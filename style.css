@@ -447,7 +447,7 @@ box-shadow: -1px 1px 1px 1px #999; }
 #map {float:left; margin:0 5px 0 0;}
 .action {display:inline-block; color: #fff; background: #404040;padding:5px;  margin:2px; text-align:right;}
 .action input {width: 70px; color:#000;}
-#info {display:inline-block; position: relative; color: #fff; background: #000; text-align:right; }
+#info {display:inline-block; position: relative; color: #fff; background: #000; text-align:right;padding:2px; }
 #box {display: inline-block; position:fixed; top:10px; left: 500px; color: #fff; background: #222; margin: 5px;vertical-align:top;}
 
 button {
